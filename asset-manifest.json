@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/maquina-enigma/static/css/main.866c4d13.css",
+    "main.js": "/maquina-enigma/static/js/main.f77e8be2.js",
+    "index.html": "/maquina-enigma/index.html",
+    "main.866c4d13.css.map": "/maquina-enigma/static/css/main.866c4d13.css.map",
+    "main.f77e8be2.js.map": "/maquina-enigma/static/js/main.f77e8be2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.866c4d13.css",
+    "static/js/main.f77e8be2.js"
+  ]
+}

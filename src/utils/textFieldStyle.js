@@ -1,23 +1,24 @@
 const textFieldStyle = {
   "& label.Mui-focused": {
-    color: "#fff",
+    color: "black",
   },
   "& label": {
-    color: "#bbb",
+    color: "black",
   },
   "& .MuiInput-underline:after": {
-    borderBottomColor: "#bbb",
+    borderBottomColor: "#ff6392",
   },
   "& .MuiOutlinedInput-root": {
-    color: "#fff",
+    background: "#ff6392",
+    color: "white",
     "& fieldset": {
-      borderColor: "#bbb",
+      borderColor: "#ff6392",
     },
     "&:hover fieldset": {
-      borderColor: "#fff",
+      borderColor: "#ff6392",
     },
     "&.Mui-focused fieldset": {
-      borderColor: "#fff",
+      borderColor: "#ff6392",
     },
   },
 };

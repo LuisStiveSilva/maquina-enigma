@@ -266,10 +266,10 @@ export default function Modal({ open, setOpen, abc, config }) {
       open={open}
       onClose={() => setOpen(false)}
     >
-      <DialogTitle sx={{ backgroundColor: "#001e3c", color: "#e7ebf0" }}>
+      <DialogTitle sx={{ backgroundColor: "#a2d2ff", color: "black" }}>
         Encriptamiento
       </DialogTitle>
-      <DialogContent sx={{ backgroundColor: "#001e3c" }} pt={2}>
+      <DialogContent sx={{ backgroundColor: "#a2d2ff" }} pt={2}>
         <CustomTextField
           label="Texto a cifrar"
           value={rawText}
@@ -283,7 +283,7 @@ export default function Modal({ open, setOpen, abc, config }) {
           variant="contained"
           sx={{
             color: "#e7ebf0",
-            backgroundColor: "#006d77",
+            backgroundColor: "black",
             "&:hover": {
               backgroundColor: "rgb(0, 109, 119, 0.8)",
             },
@@ -301,7 +301,7 @@ export default function Modal({ open, setOpen, abc, config }) {
             flexDirection: "column",
             m: "auto",
             width: "fit-content",
-            color: "#e7ebf0",
+            color: "black",
           }}
         >
           <h4>{result}</h4>

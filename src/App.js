@@ -22,20 +22,20 @@ const CustomSelect = styled(Select)(selectStyle);
 
 export default function App() {
   const [abc, setAbc] = useState({
-    inOut: "lmnopabcdefghqrstuvwxyzijk",
+    inOut: "abcdefghijklmnopqrstuvwxyz",
     rotor1: {
-      origin: "yzijklmnopabcdefghqrstuvwx",
-      destiny: "opabcdefghqrstuvwxyzijklmn",
+      origin: "abcdefghijklmnopqrstuvwxyz",
+      destiny: "zyxwvutsrqponmlkjihgfedcba",
     },
     rotor2: {
-      origin: "nbdhrvxjlaesuimfqzotygkpwc",
-      destiny: "qzotygkpwcnbdhrvxjlaesuimf",
+      origin: "abcdefghijklmnopqrstuvwxyz",
+      destiny: "zyxwvutsrqponmlkjihgfedcba",
     },
     rotor3: {
-      origin: "kjsrqhgfedcbapizyxonmlwvut",
-      destiny: "tuvwlmnoxyzipabcdefghqrsjk",
+      origin: "abcdefghijklmnopqrstuvwxyz",
+      destiny: "zyxwvutsrqponmlkjihgfedcba",
     },
-    reflector: "atabcdefgdijkgmkmiebftcvvj",
+    reflector: "abcdefghijklmnopqrstuvwxyz",
   });
 
   const [encryptConfig, setEncryptConfig] = useState([
@@ -94,8 +94,8 @@ export default function App() {
 
   return (
     <Container>
-      <Typography align="center" variant="h3" my={2}>
-        Maquina enigma
+      <Typography align="center" variant="h3" my={2} style={{ color: "black" }}>
+        Máquina enigma - Francesca Mendoza
       </Typography>
       <Grid container spacing={2}>
         <Grid item xs={12}>
@@ -123,24 +123,22 @@ export default function App() {
           destiny: abc.rotor1.destiny.length !== abc.inOut.length,
         }}
         helperText={{
-          origin: `El abecedario debe tener la misma cantidad que el abecedario del IN/OUT (${
-            abc.inOut.length > abc.rotor1.origin.length
-              ? "faltan " +
-                (abc.inOut.length - abc.rotor1.origin.length) +
-                " caracteres"
-              : "sobran " +
-                (abc.rotor1.origin.length - abc.inOut.length) +
-                " caracteres"
-          })`,
-          destiny: `El abecedario debe tener la misma cantidad que el abecedario del IN/OUT (${
-            abc.inOut.length > abc.rotor1.destiny.length
-              ? "faltan " +
-                (abc.inOut.length - abc.rotor1.destiny.length) +
-                " caracteres"
-              : "sobran " +
-                (abc.rotor1.destiny.length - abc.inOut.length) +
-                " caracteres"
-          })`,
+          origin: `El abecedario debe tener la misma cantidad que el abecedario del IN/OUT (${abc.inOut.length > abc.rotor1.origin.length
+            ? "faltan " +
+            (abc.inOut.length - abc.rotor1.origin.length) +
+            " caracteres"
+            : "sobran " +
+            (abc.rotor1.origin.length - abc.inOut.length) +
+            " caracteres"
+            })`,
+          destiny: `El abecedario debe tener la misma cantidad que el abecedario del IN/OUT (${abc.inOut.length > abc.rotor1.destiny.length
+            ? "faltan " +
+            (abc.inOut.length - abc.rotor1.destiny.length) +
+            " caracteres"
+            : "sobran " +
+            (abc.rotor1.destiny.length - abc.inOut.length) +
+            " caracteres"
+            })`,
         }}
       />
       <Rotor
@@ -158,24 +156,22 @@ export default function App() {
           destiny: abc.rotor2.destiny.length !== abc.inOut.length,
         }}
         helperText={{
-          origin: `El abecedario debe tener la misma cantidad que el abecedario del IN/OUT (${
-            abc.inOut.length > abc.rotor2.origin.length
-              ? "faltan " +
-                (abc.inOut.length - abc.rotor2.origin.length) +
-                " caracteres"
-              : "sobran " +
-                (abc.rotor2.origin.length - abc.inOut.length) +
-                " caracteres"
-          })`,
-          destiny: `El abecedario debe tener la misma cantidad que el abecedario del IN/OUT (${
-            abc.inOut.length > abc.rotor2.destiny.length
-              ? "faltan " +
-                (abc.inOut.length - abc.rotor2.destiny.length) +
-                " caracteres"
-              : "sobran " +
-                (abc.rotor2.destiny.length - abc.inOut.length) +
-                " caracteres"
-          })`,
+          origin: `El abecedario debe tener la misma cantidad que el abecedario del IN/OUT (${abc.inOut.length > abc.rotor2.origin.length
+            ? "faltan " +
+            (abc.inOut.length - abc.rotor2.origin.length) +
+            " caracteres"
+            : "sobran " +
+            (abc.rotor2.origin.length - abc.inOut.length) +
+            " caracteres"
+            })`,
+          destiny: `El abecedario debe tener la misma cantidad que el abecedario del IN/OUT (${abc.inOut.length > abc.rotor2.destiny.length
+            ? "faltan " +
+            (abc.inOut.length - abc.rotor2.destiny.length) +
+            " caracteres"
+            : "sobran " +
+            (abc.rotor2.destiny.length - abc.inOut.length) +
+            " caracteres"
+            })`,
         }}
       />
       <Rotor
@@ -193,24 +189,22 @@ export default function App() {
           destiny: abc.rotor3.destiny.length !== abc.inOut.length,
         }}
         helperText={{
-          origin: `El abecedario debe tener la misma cantidad que el abecedario del IN/OUT (${
-            abc.inOut.length > abc.rotor3.origin.length
-              ? "faltan " +
-                (abc.inOut.length - abc.rotor3.origin.length) +
-                " caracteres"
-              : "sobran " +
-                (abc.rotor3.origin.length - abc.inOut.length) +
-                " caracteres"
-          })`,
-          destiny: `El abecedario debe tener la misma cantidad que el abecedario del IN/OUT (${
-            abc.inOut.length > abc.rotor3.destiny.length
-              ? "faltan " +
-                (abc.inOut.length - abc.rotor3.destiny.length) +
-                " caracteres"
-              : "sobran " +
-                (abc.rotor3.destiny.length - abc.inOut.length) +
-                " caracteres"
-          })`,
+          origin: `El abecedario debe tener la misma cantidad que el abecedario del IN/OUT (${abc.inOut.length > abc.rotor3.origin.length
+            ? "faltan " +
+            (abc.inOut.length - abc.rotor3.origin.length) +
+            " caracteres"
+            : "sobran " +
+            (abc.rotor3.origin.length - abc.inOut.length) +
+            " caracteres"
+            })`,
+          destiny: `El abecedario debe tener la misma cantidad que el abecedario del IN/OUT (${abc.inOut.length > abc.rotor3.destiny.length
+            ? "faltan " +
+            (abc.inOut.length - abc.rotor3.destiny.length) +
+            " caracteres"
+            : "sobran " +
+            (abc.rotor3.destiny.length - abc.inOut.length) +
+            " caracteres"
+            })`,
         }}
       />
       <Grid container spacing={2} mt={2}>
@@ -222,14 +216,13 @@ export default function App() {
             error={abc.reflector.length !== abc.inOut.length}
             helperText={
               abc.reflector.length !== abc.inOut.length &&
-              `El abecedario debe tener la misma cantidad que el abecedario del IN/OUT (${
-                abc.inOut.length > abc.reflector.length
-                  ? "faltan " +
-                    (abc.inOut.length - abc.reflector.length) +
-                    " caracteres"
-                  : "sobran " +
-                    (abc.reflector.length - abc.inOut.length) +
-                    " caracteres"
+              `El abecedario debe tener la misma cantidad que el abecedario del IN/OUT (${abc.inOut.length > abc.reflector.length
+                ? "faltan " +
+                (abc.inOut.length - abc.reflector.length) +
+                " caracteres"
+                : "sobran " +
+                (abc.reflector.length - abc.inOut.length) +
+                " caracteres"
               })`
             }
             variant="outlined"
@@ -241,7 +234,7 @@ export default function App() {
         </Grid>
 
         <Grid item xs={12}>
-          <Typography align="left" variant="h5">
+          <Typography align="left" variant="h5" style={{ color: "black" }}>
             Configuración
           </Typography>
         </Grid>
@@ -300,8 +293,8 @@ export default function App() {
                   {(encryptConfig[index].abc === "rotor1Origin" ||
                     encryptConfig[index].abc === "rotor2Origin" ||
                     encryptConfig[index].abc === "rotor3Origin") && (
-                    <MenuItem value="horse">Caballo</MenuItem>
-                  )}
+                      <MenuItem value="horse">Caballo</MenuItem>
+                    )}
                 </CustomSelect>
               </FormControl>
             </Grid>
@@ -378,10 +371,11 @@ export default function App() {
             variant="contained"
             sx={{
               color: "#e7ebf0",
-              backgroundColor: "#006d77",
+              backgroundColor: "black",
               "&:hover": {
                 backgroundColor: "rgb(0, 109, 119, 0.8)",
               },
+              marginBottom: '30px'
             }}
             onClick={() => validateAbc()}
           >

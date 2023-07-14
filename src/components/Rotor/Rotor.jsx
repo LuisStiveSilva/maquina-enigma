@@ -17,7 +17,7 @@ export default function Rotor({
   return (
     <Grid item container spacing={2} mt={2}>
       <Grid item xs={12}>
-        <Typography align="left" variant="h5">
+        <Typography align="left" variant="h5" style={{ color: "black" }}>
           {title}
         </Typography>
       </Grid>

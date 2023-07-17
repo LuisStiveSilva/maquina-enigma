@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/maquina-enigma/static/css/main.866c4d13.css",
-    "main.js": "/maquina-enigma/static/js/main.f77e8be2.js",
+    "main.css": "/maquina-enigma/static/css/main.b168d01b.css",
+    "main.js": "/maquina-enigma/static/js/main.4ffb7c50.js",
     "index.html": "/maquina-enigma/index.html",
-    "main.866c4d13.css.map": "/maquina-enigma/static/css/main.866c4d13.css.map",
-    "main.f77e8be2.js.map": "/maquina-enigma/static/js/main.f77e8be2.js.map"
+    "main.b168d01b.css.map": "/maquina-enigma/static/css/main.b168d01b.css.map",
+    "main.4ffb7c50.js.map": "/maquina-enigma/static/js/main.4ffb7c50.js.map"
   },
   "entrypoints": [
-    "static/css/main.866c4d13.css",
-    "static/js/main.f77e8be2.js"
+    "static/css/main.b168d01b.css",
+    "static/js/main.4ffb7c50.js"
   ]
 }
